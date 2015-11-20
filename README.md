@@ -1,5 +1,4 @@
 # southpark
-my southpark doodles
-free to use as you wish 
+my southpark doodles for fun :)
 
-view here - <a href="http://chrisroy.co/southpark/southpark.html" title="view southpark characters">view southpark characters here</a>
+view southpark characters <a href="http://chrisroy.co/southpark/southpark.html" title="view southpark characters">here</a>
