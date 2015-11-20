@@ -1,0 +1,384 @@
+/***************
+author - Chris Roy - chrisroy.co
+***************/
+
+.wrapper{width: 725px; height: 225px;  margin: auto; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.head{background-color:#efd4aa;}
+.shadow,
+.hand,
+.left-hand:before,
+.right-hand:before{box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#cartman .hand,
+#cartman .left-hand:before,
+#cartman .right-hand:before{box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;}
+
+#kyle{position: absolute; width: 168px; height: 209px; bottom: 0px; left:555px;}
+#kyle *{position: absolute; box-sizing: content-box; -moz-box-sizing: content-box;}
+#kyle .hat{top: 3px;left: 22px;width: 129px; height: 54px; transform: rotate(3deg); -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); background-color: #57de15; border-top-right-radius: 15px; -webkit-border-top-right-radius: 15px; -moz-border-top-right-radius: 15px;border-top-left-radius: 15px;-webkit-border-top-left-radius: 15px;-moz-border-top-left-radius: 15px; z-index:4; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#kyle .top-hat{top: 25px;left: 9px; width: 112px; height: 36px; transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); background-color: #1fb62e; clip: rect(0px, 112px, 37px, 0px); z-index:1;}
+#kyle .top-hat:after{content: "";top: 29px;left: -9px; width: 127px; height: 30px; background-color: #efd4aa; position: absolute; border-radius: 100% 100% 0 0; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); clip: rect(0px, 116px, 8px, 16px);}
+#kyle .flap{width: 24px; height: 64px; background-color: #57de15;  border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%;}
+#kyle .left-flap{top: 46px;left: -13px; transform: rotate(19deg); -webkit-transform: rotate(19deg); -moz-transform: rotate(19deg);}
+#kyle .right-flap{right: -15px;top: 45px; transform: rotate(-22deg); -webkit-transform: rotate(-22deg); -moz-transform: rotate(-22deg);}
+#kyle .head{width: 136px;height: 141px;border-radius: 50%;top: 2px;left: 16px; clip: rect(54px, 131px, 141px, 2px);}
+#kyle .eyes{top: 58px; left: 32px; width: 79px; height: 45px; z-index:6;}
+#kyle .eye{width: 37px;height: 43px;border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color:#fff;}
+#kyle .left-eye{top: 0px;left: 0px; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#kyle .right-eye{left:38px; top:0px; transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg);}
+#kyle .right-eye:before{content: "";top: 4px;left: 2px;width: 5px; height: 12px; border-radius: 50%; border-left: 1px solid #3f3f3f; position: absolute; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#kyle .pupil{width:4px; height:4px; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; background-color:#000;}
+#kyle .left-eye .pupil{top: 15px; left: 26px;}
+#kyle .right-eye .pupil{top: 27px;left: 26px;}
+#kyle .mouth{top: 118px; left: 58px; width: 21px; height: 5px; border-bottom: 1px solid black; border-radius: 50%; transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg);border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%;}
+#kyle .head-2{-webkit-animation: mouth-suprise 5s infinite step-start 0s;-moz-animation: mouth-suprise 5s infinite step-start 0s;animation: mouth-suprise 5s infinite step-start 0s;}
+#kyle .head-2 .mouth{border: 0; background-color: #3f3f3f; width:12px; height:12px;}
+#kyle .body{width: 133px;height: 83px;top: 126px;left: 16px; z-index:-1;}
+#kyle .shirt{top: -22px;left: 2px;width: 129px;height: 167px; background-color: #ed5c10;border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; clip: rect(0px, 131px, 70px, 2px);}
+#kyle .shirt:before{content: ""; position: absolute;top: -43px;left: 14px;background-color: #21b42e; width: 107px; height: 88px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#kyle .body:after{content: "";position: absolute;top: -20px;left: -23px; background-color: #ed5c10; width: 190px; height: 88px;border-radius: 0 0 50% 50%; clip: rect(64px, 143px, 88px, 38px); z-index: 2; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#kyle .hand{width: 21px; height: 21px; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%; background-color: #57dc17;z-index:3;}
+#kyle .left-hand{top: 41px;left: 2px;}
+#kyle .left-hand:before{content: ""; position: absolute; top: 3px; left: 14px; width: 9px; height: 9px; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%;background-color: #57dc17;}
+#kyle .left-hand:after{content: ""; position: absolute; top: -10px; left: 20px; width: 0px; height: 14px; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%; border-right: 1px solid #000; transform: rotate(16deg); -webkit-transform: rotate(16deg); -moz-transform: rotate(16deg);}
+#kyle .right-hand{right: 2px; top: 45px;}
+#kyle .right-hand:before{content: ""; position: absolute; top: 3px; left:-2px; width: 9px; height: 9px; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%; background-color: #57dc17;}
+#kyle .right-hand:after{content: ""; position: absolute;top: -13px;left: 0px; width: 0px;height: 15px; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%; border-right: 1px solid #000; transform: rotate(-9deg); -webkit-transform: rotate(-9deg); -moz-transform: rotate(-9deg);}
+#kyle .pocket{width: 16px; height: 20px; border: 1px solid #000;overflow: hidden; z-index:3;}
+#kyle .pocket:before{content: "";position: absolute; width: 14px; height: 18px; border: 1px solid #000; top: -13px; left: 1px; transform: rotate(43deg) skew(6deg, 8deg); -webkit-transform: rotate(43deg) skew(6deg, 8deg); -moz-transform: rotate(43deg) skew(6deg, 8deg);}
+#kyle .left-pocket{top: 29px;left: 39px;}
+#kyle .right-pocket{top: 28px;left: 80px;}
+#kyle .zip{top: 17px;left: 68px; width: 1px; height: 51px;background-color: #000;z-index: 3; transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg);}
+#kyle .legs{height: 17px;width: 89px;left: 23px; bottom: 4px; background-color: #346d55; z-index: 1;}
+#kyle .shoe{background: #000; border-radius 50%; -webkit-border-radius 50%; -moz-border-radius 50%; bottom: -3px; height: 11px; width: 53px; z-index: 1;clip: rect(0px, 87px, 5px, 0px);}
+#kyle .left-shoe{left:18px;}
+#kyle .right-shoe{left:66px;}
+
+#kenny{position: absolute; width: 145px; height: 197px; bottom: -2px; left: 390px;}
+#kenny *{position: absolute; box-sizing: content-box; -moz-box-sizing: content-box;}
+#kenny .head{top: 1px; left: 0; width: 144px; height: 144px;border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; background-color: #eb5a0e; z-index: 2;	-moz-animation: 3s ease 0s normal none infinite swing; -moz-transform-origin: center bottom; -webkit-animation:swing 3s infinite ease-in-out;  -webkit-transform-origin: center bottom; animation:swing 3s infinite ease-in-out;transform-origin: center bottom;}
+#kenny .outer-hood{top: 33px;left: 20px; width: 100px; height: 89px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; border: 1px solid black;}
+#kenny .outer-hood:before{content: ""; top: 79px;left: 48px;width: 1px;height: 21px; background-color: #000; z-index: 3; position: absolute; transform: rotate(15deg); -webkit-transform: rotate(15deg); -moz-transform: rotate(15deg);}
+#kenny .outer-hood:after{content: "";top: 79px;left: 54px;width: 1px; height: 25px;background-color: #000; z-index: 3;position: absolute; transform: rotate(-15deg); -webkit-transform: rotate(-15deg); -moz-transform: rotate(-15deg);}
+#kenny .inner-hood{top: -2px;left: 4px; width: 92px; height: 82px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; background-color: #6a3d1d;}
+#kenny .face{position: relative;top: 13px;left: 17px;width: 58px;height: 58px; background: #efd4aa; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-top-left-radius: 5px 5px; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); overflow:hidden; z-index:1;}
+#kenny .inner-hood:after{content: "";position: absolute;top: 12px;left: 17px; width: 58px; height: 58px; background: #efd4aa; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-top-left-radius: 5px 5px; transform: rotate(222deg); -webkit-transform: rotate(222deg); -moz-transform: rotate(222deg);}
+#kenny .eyes{top: 3px;left: -11px; width: 79px;height: 45px;transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); z-index: 1;}
+#kenny .eye{width: 37px;height: 43px;border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color:#fff;}
+#kenny .left-eye{top: 0px;left: 0px; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#kenny .right-eye{left:38px; top:0px; transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg);}
+#kenny .right-eye:before{content: "";top: 4px;left: 2px;width: 5px; height: 12px; border-radius: 50%; border-left: 1px solid #3f3f3f; position: absolute; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#kenny .pupil{width:4px; height:4px; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; background-color:#000;}
+#kenny .left-eye .pupil{top: 16px;left: 22px;}
+#kenny .right-eye .pupil{top: 16px;left: 12px;}
+#kenny .body{width: 136px; height: 73px; top: 124px; left: 5px;}
+#kenny .shirt{ top: -25px; left: 3px; width: 131px; height: 175px; background-color: #eb5a0e; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; clip: rect(0px, 131px, 70px, 2px);}
+#kenny .body:after{content: ""; position: absolute; top: -29px; left: -20px; background-color: #eb5a0e; width: 185px; height: 88px; border-radius: 0 0 50% 50%; clip: rect(64px, 137px, 88px, 40px);z-index:2; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#kenny .hand{width: 21px; height: 21px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #623919;z-index:3;}
+#kenny .left-hand{top: 33px; left: 1px;}
+#kenny .left-hand:before{content: ""; position: absolute; top: 3px; left: 14px; width: 9px; height: 9px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #623919;}
+#kenny .left-hand:after{content: ""; position: absolute; top: -5px; left: 23px; width: 0px; height: 11px;  border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-right: 1px solid #000; transform: rotate(12deg); -webkit-transform: rotate(12deg); -moz-transform: rotate(12deg);}
+#kenny .right-hand{right: 1px;top: 34px;}
+#kenny .right-hand:before{content: ""; position: absolute; top: 2px; left: -2px; width: 9px; height: 9px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #623919;}
+#kenny .right-hand:after{content: ""; position: absolute; top: -5px; left: -3px; width: 0px; height: 11px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-right: 1px solid #000; transform: rotate(-9deg); -webkit-transform: rotate(-9deg); -moz-transform: rotate(-9deg);}
+#kenny .zip{top: 21px; left: 68px; width: 1.5px; height: 38px; background-color: #000; z-index: 3;}
+#kenny .legs{height: 17px; width: 85px; left: 26px; bottom: 5px;background-color: #eb5a0e; z-index: 1;}
+#kenny .feet{background: #000; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; bottom: -3px; height: 13px; width: 93px; left: 21px; z-index: 1; clip: rect(4px, 93px, 9px, 0px);}
+
+#stan{position: absolute; width: 144px; height: 220px; bottom: 0px; left:230px;}
+#stan *{position: absolute; box-sizing: content-box; -moz-box-sizing: content-box;}
+#stan .head{width: 136px; height: 141px; order-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; top: 15px; left: 3px; z-index:3;}
+#stan .bobble{top: -16px; left: 48px; width: 35px; height: 35px;}
+#stan .bobble *{top: 0px; left: 15px; width: 3px; height: 33px; background-color: #c0052f; border-radius: 30%; -webkit-border-radius: 30%; -moz-border-radius: 30%; box-shadow: 0 0 1px #000;}
+#stan .bobble1{transform: rotate(-64deg); -webkit-transform: rotate(-64deg); -moz-transform: rotate(-64deg);}
+#stan .bobble2{transform: rotate(-47deg); -webkit-transform: rotate(-47deg); -moz-transform: rotate(-47deg);}
+#stan .bobble3{transform: rotate(-85deg); -webkit-transform: rotate(-85deg); -moz-transform: rotate(-85deg);}
+#stan .bobble4{transform: rotate(-107deg); -webkit-transform: rotate(-107deg); -moz-transform: rotate(-107deg);}
+#stan .bobble5{transform: rotate(-131deg); -webkit-transform: rotate(-131deg); -moz-transform: rotate(-131deg);}
+#stan .bobble6{transform: rotate(-155deg); -webkit-transform: rotate(-155deg); -moz-transform: rotate(-155deg);}
+#stan .bobble7{transform: rotate(-177deg); -webkit-transform: rotate(-177deg); -moz-transform: rotate(-177deg);}
+#stan .bobble8{transform: rotate(-202deg); -webkit-transform: rotate(-202deg); -moz-transform: rotate(-202deg);}
+#stan .hat{ position: absolute; left: 0px; top: 0px; width: 137px; height: 140px; background:#435c91; border-radius: 100% 100% 0 0; -webkit-border-radius: 100% 100% 0 0; -moz-border-radius: 100% 100% 0 0;  clip: rect(0px, 137px, 53px, 0px);}
+#stan .hat-lip{top: 41px; left: -2px; width: 140px; height: 30px; background-color:#c0052f; border-radius: 100% 100% 0 0; -webkit-border-radius: 100% 100% 0 0; -moz-border-radius: 100% 100% 0 0; transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); clip: rect(0px, 140px, 26px, 0px);}
+#stan .hat-lip:after{content: ""; top: 16px; left: -2px; width: 143px; height: 30px; background-color:#efd4aa; position: absolute; border-radius: 100% 100% 0 0; -webkit-border-radius: 100% 100% 0 0; -moz-border-radius: 100% 100% 0 0; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#stan .eyes{top: 58px; left: 31px; width: 79px; height: 45px;}
+#stan .eyes{-webkit-animation: blink 6s infinite step-start 0s;  -moz-animation: blink 6s infinite step-start 0s;  animation: blink 6s infinite step-start 0s;}
+#stan .eye{width: 37px;height: 43px;border-radius: 50%; background-color:#fff;}
+#stan .left-eye{top: 0px;left: 0px; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#stan .right-eye{left:38px; top:0px; transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg);}
+#stan .right-eye:before{content: "";top: 4px;left: 2px;width: 5px; height: 12px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-left: 1px solid #3f3f3f; position: absolute; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#stan .pupil{width:4px; height:4px; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; background-color:#000;}
+#stan .left-eye .pupil{top: 14px; left: 27px;}
+#stan .right-eye .pupil{top: 26px;left: 25px;}
+#stan .mouth{top: 117px; left: 58px; width: 21px; height: 5px; border-bottom: 1px solid black; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg);}
+#stan .body{width: 130px;height: 83px; top: 137px; left: 2px;}
+#stan .shirt{top:-24px;left: 0px; width: 131px; height: 175px; background-color: #955848; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; clip: rect(0px, 131px, 70px, 2px);}
+#stan .shirt:before{content: ""; position: absolute; top: -39px; left: 18px; background-color:#c0052f; width: 103px; height: 88px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%;}
+#stan .body:after{content: "";position: absolute; top: -20px; left: -23px; background-color:#955848; width: 185px; height: 88px; border-radius: 0 0 50% 50%; -webkit-border-radius: 0 0 50% 50%; -moz-border-radius: 0 0 50% 50%; clip: rect(64px, 143px, 88px, 38px);z-index:2; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#stan .hand{width: 21px; height: 21px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #c0052f;z-index:3; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#stan .left-hand{top: 37px; left: 1px;}
+#stan .left-hand:before{content: ""; position: absolute; top: 3px; left: 14px; width: 9px; height: 9px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #c0052f;}
+#stan .left-hand:after{content: ""; position: absolute; top: -10px; left: 20px; width: 0px; height: 14px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;  border-right: 1px solid #000; transform: rotate(9deg); -webkit-transform: rotate(9deg); -moz-transform: rotate(9deg);}
+#stan .right-hand{right: -1px;top: 40px;}
+#stan .right-hand:before{content: ""; position: absolute; top: 3px; left:-3px; width: 9px; height: 9px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;  background-color: #c0052f;}
+#stan .right-hand:after{content: ""; position: absolute; top: -11px; left:-1px; width: 0px; height: 14px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;  border-right: 1px solid #000; transform: rotate(-9deg); -webkit-transform: rotate(-9deg); -moz-transform: rotate(-9deg);}
+#stan .zip{top: 25px;left: 66px; width: 1.5px; height: 42px; background-color: #000; z-index: 3; transform: rotate(3deg); -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg);}
+#stan .button{ width: 3px; height: 3px; background-color: #000; z-index: 2; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+#stan .button1{top: 3px; left: -7px;}
+#stan .button2{top: 17px; left: -6px;}
+#stan .button3{top: 32px; left: -6px;}
+#stan .legs{height: 17px;width: 96px; left: 19px; bottom: 5px; background-color: #435c91; z-index: 1; box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1); -moz-box-shadow: inset 0 0 1px rgba(0, 0, 0, 1);}
+#stan .shoe{background: #000; border-radius: 50%; bottom: -3px; height: 11px; width: 58px; z-index: 1;clip: rect(0px, 87px, 5px, 0px);}
+#stan .left-shoe{left:11px;}
+#stan .right-shoe{left:65px;}
+
+#cartman{position: absolute; width: 223px;height: 204px; bottom: 0px; left:0px;}
+#cartman *{position: absolute; box-sizing: content-box; -moz-box-sizing: content-box;}
+#cartman .head{width: 162px;height: 135px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; top: 8px; left: 29px; background-color: #4dc6b7; overflow: hidden; z-index:3;}
+#cartman .bobble{width: 53px; height: 22px; z-index: 4; top: -1px; left: 78px;}
+#cartman .bobble *{left: 24px; width: 16px;height: 10px; background-color: #f2e90e; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+#cartman .bobble1{top: 7px;left: 4px;}
+#cartman .bobble2{top: 4px;left: 12px;}
+#cartman .bobble3{top: 9px;left: 12px;}
+#cartman .bobble4{top: 2px;left: 26px;}
+#cartman .bobble5{top: 9px;left: 24px;}
+#cartman .bobble6{top: 4px;left: 35px;}
+#cartman .bobble7{top: 8px;left: 37px;}
+#cartman .bobble8{top: 6px;left: 39px;}
+#cartman .hat-lip{content: ""; width: 230px;height: 145px;border-radius: 100% 100% 0 0; -webkit-border-radius: 100% 100% 0 0; -moz-border-radius: 100% 100% 0 0; top: 36px;left: -23px; background-color: #f2e90e; position: absolute;}
+#cartman .face{content: "";width: 235px;height: 145px;border-radius: 100% 100% 0 0; -webkit-border-radius: 100% 100% 0 0; -moz-border-radius: 100% 100% 0 0; top: 42px;left: -25px; background-color: #efd4aa; position: absolute;}
+#cartman .face-1 .eye{width: 37px;height: 45px;border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color:#fff;-webkit-animation: eyes 3s infinite step-start 0s;-moz-animation: eyes 3s infinite step-start 0s;animation: eyes 3s infinite step-start 0s;}
+#cartman .face-1 .left-eye{top: 2px;left: 71px; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#cartman .face-1 .right-eye{left:110px; top:2px; transform: rotate(-30deg); -webkit-transform: rotate(-30deg); -moz-transform: rotate(-30deg);}
+#cartman .face-1 .right-eye:before{content: "";top: 4px;left: 2px;width: 5px; height: 12px; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-left: 1px solid #3f3f3f; position: absolute; transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg);}
+#cartman .face-1 .pupil{width:4px; height:4px; border-radius:50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color:#000; -webkit-animation: pupil 3s infinite step-start 0s; -moz-animation: pupil 3s infinite step-start 0s; animation: iris 3s infinite step-start 0s;}
+#cartman .face-1 .left-eye .pupil{top: 14px; left: 27px;}
+#cartman .face-1 .right-eye .pupil{top: 26px;left: 29px;}
+#cartman .lid{background: #000; height: 1px; position: absolute; width: 37px;}
+#cartman .left-eye .top-lid{-moz-transform: rotate(20deg); -webkit-transform: rotate(20deg);  transform: rotate(20deg);  left: 0;  top: 21px;}
+#cartman .left-eye .bottom-lid{-moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg);  transform: rotate(-20deg);  left: 0;  bottom: 9px;}
+#cartman .right-eye .top-lid{-moz-transform: rotate(-20deg); -webkit-transform: rotate(-20deg);  transform: rotate(-20deg);  left: 0;  top: 21px;}
+#cartman .right-eye .bottom-lid{-moz-transform: rotate(20deg); -webkit-transform: rotate(20deg);  transform: rotate(20deg);  left: 0;  bottom: 9px;}
+#cartman .face-2 .eye{width: 37px;height: 45px;}
+#cartman .face-2 .left-eye{top: 2px;left: 73px;}
+#cartman .face-2 .right-eye{left:110px; top:2px;}
+#cartman .face-2 .mouth{background: #000; border-bottom: 2px solid #000;  top: 59px;  height: 15px; left: 85px; position: absolute; width: 50px;}
+#cartman .face-2 .tooth{background: #fff; float: left; height: 6px; margin: 0 1px; width: 8px; border-top: 2px solid #333; position: relative;}
+#cartman .face-2 .lip{background: #efd4aa; height: 29px; position: absolute; top: 1px; width: 16px;}
+#cartman .face-2 .lip.left{left: 0;-moz-transform: rotate(-60deg);-webkit-transform: rotate(-60deg);transform: rotate(-60deg); border-right: 2px solid #000;}
+#cartman .face-2 .lip.right{right: 0;-moz-transform: rotate(60deg);-webkit-transform: rotate(60deg);transform: rotate(60deg); border-left: 2px solid #000; }
+.face-1{-webkit-animation: normal-eyes 7s infinite step-start 0s;   -moz-animation: normal-eyes 7s infinite step-start 0s;  animation: normal-eyes 7s infinite step-start 0s;}
+.face-2{-webkit-animation: angry-eyes 7s infinite step-start 0s;  -moz-animation: angry-eyes 7s infinite step-start 0s;  animation: angry-eyes 7s infinite step-start 0s;}
+#cartman .face-1 .mouth{border-bottom: 2px solid #000; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%;top: 62px; left: 101px; height: 6px; width: 23px; -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg) -o-transform: rotate(5deg) transform: rotate(5deg);}
+#cartman .chin{border-bottom: 1px solid #000; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%;top: 72px; left: 97px; height: 6px; width: 28px;}
+#cartman .neck-line{border-bottom: 1px solid #000; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%;top: 12px; left: 40px; height: 73px; width: 133px; clip: rect(47px, 133px, 75px, 0px);}
+#cartman .body{background: #ED314C; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%; height: 107px;left: 6px;top: 81px; width: 209px; z-index:2;}
+#cartman .body:before{content: "";background: #ED314C;border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;height: 48px;left: 8px; top: 63px; width: 127px;position: absolute; transform: rotate(8deg); -webkit-transform: rotate(8deg); -moz-transform: rotate(8deg); z-index:2;}
+#cartman .body:after{content: ""; background: #ED314C; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%;height: 47px;left: 77px;top: 59px; width: 127px; position: absolute; transform: rotate(-8deg) skew(30deg, 0deg); -webkit-transform: rotate(-8deg) skew(30deg, 0deg); -moz-transform: rotate(-8deg) skew(30deg, 0deg); z-index:2;}
+#cartman .hand{background-color: #f2e90e; z-index:3;}
+#cartman .left-hand{top: 48px;left: -7px; width: 43px; height: 25px; border-radius: 100% 100% 88% 68%; -webkit-border-radius: 100% 100% 88% 68%; -moz-border-radius: 100% 100% 88% 68%; transform: rotate(19deg);}
+#cartman .left-hand:before{content: ""; width: 30px; height: 23px; top: 4px; left: -1px; position: absolute; border-radius: 50% 50% 40% 56%; -webkit-border-radius: 50% 50% 40% 56%; -moz-border-radius: 50% 50% 40% 56%; transform: rotate(43deg); -webkit-transform: rotate(43deg); -moz-transform: rotate(43deg); background-color: #f2e90e;z-index: 3;}
+#cartman .left-hand:after{content: ""; width: 30px; height: 19px;top: 3px; left: 15px; position: absolute; border-radius: 50% 50% 40% 56%; -webkit-border-radius: 50% 50% 40% 56%; -moz-border-radius: 50% 50% 40% 56%; transform: rotate(7deg); -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); background-color: #f2e90e;z-index: 3;}
+#cartman .right-hand{top: 45px;right: -10px;width: 33px;height: 24px;border-radius: 81% 90% 100% 33%; -webkit-border-radius: 81% 90% 100% 33%; -moz-border-radius: 81% 90% 100% 33%; transform: rotate(89deg); -webkit-transform: rotate(89deg); -moz-transform: rotate(89deg);}
+#cartman .right-hand:before{content: "";right: 6px;top: 10px; width: 21px; height: 24px; position: absolute; border-radius: 0% 48% 100% 28%; -webkit-border-radius: 0% 48% 100% 28%; -moz-border-radius: 0% 48% 100% 28%; transform: rotate(-54deg); -webkit-transform: rotate(-54deg); -moz-transform: rotate(-54deg); background-color: #f2e90e;z-index: 3;}
+#cartman .right-hand:after{content: ""; top: 10px; right: 4px; width: 14px; height: 28px; position: absolute; border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%; background-color: #f2e90e;z-index: 3;}
+#cartman .zip{top: 62px;left: 114px; width: 1.5px; height: 49px; background-color: #000; z-index: 3;}
+#cartman .button{ width: 3px; height: 6px; background-color: #000; z-index: 2; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%;}
+#cartman .button1{top: 2px; left: -6px;}
+#cartman .button2{top: 19px; left: -4px;}
+#cartman .button3{top: 37px; left: -6px;}
+#cartman .legs{border-top: 30px solid #653c1e; border-left: 10px solid transparent; border-right: 10px solid transparent; height: 0; width: 159px; left: 15px; bottom: -12px; z-index: 1;}
+#cartman .shoe{background: #000;border-radius: 50%;  -webkit-border-radius: 50%; -moz-border-radius: 50%; bottom: -20px; height: 11px; width: 87px; z-index: 1; clip: rect(0px, 87px, 5px, 0px);}
+#cartman .left-shoe{left:21px;}
+#cartman .right-shoe{left: 103px;}
+
+
+@-moz-keyframes normal-eyes {
+   0%, 100% {
+		opacity: 0;
+   }
+   35%, 65% {
+		opacity: 1;
+   }
+}
+
+@-webkit-keyframes normal-eyes {
+   0%, 100% {
+		opacity: 0;
+   }
+   35%, 65% {
+		opacity: 1;
+   }
+}
+
+@-o-keyframes normal-eyes {
+   0%, 100% {
+		opacity: 0;
+   }
+   35%, 65% {
+		opacity: 1;
+   }
+}
+
+@keyframes normal-eyes {
+   0%, 100% {
+		opacity: 0;
+   }
+   35%, 65% {
+		opacity: 1;
+   }
+}
+
+@-moz-keyframes angry-eyes {
+   0%, 100% {
+		opacity: 1;
+   }
+   35%, 65% {
+		opacity: 0;
+   }
+}
+
+@-webkit-keyframes angry-eyes {
+   0%, 100% {
+		opacity: 1;
+   }
+   35%, 65% {
+		opacity: 0;
+   }
+}
+
+@-o-keyframes angry-eyes {
+   0%, 100% {
+		opacity: 1;
+   }
+   35%, 65% {
+		opacity: 0;
+   }
+}
+
+@keyframes angry-eyes {
+   0%, 100% {
+		opacity: 1;
+   }
+   35%, 65% {
+		opacity: 0;
+   }
+}
+
+
+
+@-webkit-keyframes pupil {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes pupil {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@-o-keyframes pupil {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+@keyframes pupil {
+	0%, 100% {
+		opacity: 0;
+	}
+	15%, 95% {
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes blink {
+	0%, 100% {
+		opacity: 0;
+	}
+	5%, 97% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes blink {
+	0%, 100% {
+		opacity: 0;
+	}
+	5%, 97% {
+		opacity: 1;
+	}
+}
+@-o-keyframes blink {
+	0%, 100% {
+		opacity: 0;
+	}
+	5%, 97% {
+		opacity: 1;
+	}
+}
+@keyframes blink {
+	0%, 100% {
+		opacity: 0;
+	}
+	5%, 97% {
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes mouth-suprise {
+	0%, 100% {
+		opacity: 1;
+	}
+	35%, 65% {
+		opacity: 0;
+	}
+}
+@-moz-keyframes mouth-suprise {
+	0%, 100% {
+		opacity: 1;
+	}
+	35%, 65% {
+		opacity: 0;
+	}
+}
+@-o-keyframes mouth-suprise {
+	0%, 100% {
+		opacity: 1;
+	}
+	35%, 65% {
+		opacity: 0;
+	}
+}
+@keyframes mouth-suprise {
+	0%, 100% {
+		opacity: 1;
+	}
+	35%, 65% {
+		opacity: 0;
+	}
+}
+
+@keyframes swing{
+    0%{transform:rotate(-3deg)}
+    50%{transform:rotate(3deg)}
+    100%{transform:rotate(-3deg)}
+}
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-3deg)}
+    50%{-moz-transform:rotate(3deg)}
+    100%{-moz-transform:rotate(-3deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-3deg)}
+    50%{-webkit-transform:rotate(3deg)}
+    100%{-webkit-transform:rotate(-3deg)}
+}
